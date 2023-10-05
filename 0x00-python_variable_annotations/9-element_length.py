@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """  module for type hint """
-from typing import List, Tuple
+from typing import Iterable, Sequence, List, Tuple
 
-def element_length(lst: List[str]) -> List[Tuple[str, int]]:
-    """Takes a list of strings and returns a list of tuples with each string and its length."""
+def element_length(lst: Iterable[Sequence]) -> List[Tuple[Sequence, int]]:
+    """Takes an iterable of sequences and returns a list of tuples with each sequence and its length."""
     return [(i, len(i)) for i in lst]
