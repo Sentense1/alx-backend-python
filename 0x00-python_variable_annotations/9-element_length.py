@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# Takes an iterable of sequences and returns a list of tuples with each sequence and its length.
 """  module for type hint """
 from typing import Iterable, Sequence, List, Tuple
 
