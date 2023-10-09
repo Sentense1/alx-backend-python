@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-""" """
+""" Module that takes an integer max_delay and returns a asyncio.Task. """
 import asyncio
 from asyncio import create_task
 from typing import Callable
