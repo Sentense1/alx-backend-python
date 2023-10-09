@@ -3,8 +3,7 @@
 
 
 import asyncio
-import typing
-from typing import List, Optional
+from typing import List
 
 
 from .3-tasks import task_wait_random
