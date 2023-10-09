@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
-
 """ This module provides an asynchronous coroutine for generating a random delay. """
 
 import asyncio
 import random
 from typing import Optional
 
-async def wait_random(max_delay: float = 10.0) -> float:
+
+async def wait_random(max_delay: int = 10) -> float:
     """ 
     Generates a random delay between 0 and max_delay (inclusive) seconds and returns it.
     
