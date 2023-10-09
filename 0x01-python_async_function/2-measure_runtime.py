@@ -32,9 +32,3 @@ def measure_time(n: int, max_delay: int) -> float:
 
     # Calculate the average execution time per call
     return elapsed_time / n
-
-if __name__ == '__main__':
-    n = 5
-    max_delay = 9
-
-    print(measure_time(n, max_delay))
