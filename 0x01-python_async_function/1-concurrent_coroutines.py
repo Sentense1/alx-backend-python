@@ -12,7 +12,7 @@ async def wait_n(n: int, max_delay: int) -> List[float]:
 
     Args:
         n (int): The number of random delays to generate.
-        max_delay (float): The maximum delay in seconds.
+        max_delay (float): The maximum delay in seconds .
 
     Returns:
         List[float]: A list of random delays sorted in ascending order.

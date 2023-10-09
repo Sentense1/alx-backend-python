@@ -16,7 +16,7 @@ def measure_time(n: int, max_delay: int) -> float:
         max_delay (float): The maximum delay in seconds for each call.
 
     Returns:
-        int: The average execution time per call in seconds.
+        int: The average execution time per call in seconds .
     """
     # Measure the start time using time.perf_counter().
     start_time = time.perf_counter()
