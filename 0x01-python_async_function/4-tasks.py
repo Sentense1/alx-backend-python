@@ -1,7 +1,10 @@
 #!/usr/bin/env python3
 """ Module for asynchronous delay operations. """
+
+
 import asyncio
 from typing import List, Optional
+
 
 task_wait_random = __import__('3-tasks').task_wait_random
 
@@ -28,6 +31,7 @@ async def task_wait_n(n: int, max_delay: int) -> List[float]:
 
     # Return the sorted list.
     return sorted_list
+
 
 if __name__ == '__main__':
     n = 5

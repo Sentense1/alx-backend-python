@@ -1,8 +1,11 @@
 #!/usr/bin/env python3
-""" Module that takes an integer max_delay and returns a asyncio.Task. """
+"""Asynchronous task creation module."""
+
+
 import asyncio
 from asyncio import create_task
 from typing import Callable, Optional
+
 
 wait_random = __import__('0-basic_async_syntax').wait_random
 
