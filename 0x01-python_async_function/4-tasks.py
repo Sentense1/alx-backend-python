@@ -2,6 +2,7 @@
 """Module for asynchronous delay operations."""
 
 import asyncio
+import typing
 from typing import List, Optional
 
 from .3-tasks import task_wait_random
@@ -28,8 +29,3 @@ async def task_wait_n(n: int, max_delay: int) -> List[float]:
 
     # Return the sorted list.
     return sorted_list
-
-if __name__ == '__main__':
-    n = 5
-    max_delay = 6
-    print(asyncio.run(task_wait_n(n, max_delay)))
