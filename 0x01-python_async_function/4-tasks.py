@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
-"""Module for asynchronous delay operations."""
+""" Module for asynchronous delay operations. """
 
 
 import asyncio
 from typing import List
 
 
-from .3-tasks import task_wait_random
+task_wait_random = __import__('3-tasks').task_wait_random
 
 
 async def task_wait_n(n: int, max_delay: int) -> List[float]:
