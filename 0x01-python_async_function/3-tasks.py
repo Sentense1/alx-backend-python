@@ -2,9 +2,11 @@
 """ Module that takes an integer max_delay and returns a asyncio.Task. """
 import asyncio
 from asyncio import create_task
-from typing import Callable
+from typing import Callable, Optional
+
 
 wait_random = __import__('0-basic_async_syntax').wait_random
+
 
 
 def task_wait_random(max_delay: int) -> asyncio.Task[float]:
@@ -19,6 +21,7 @@ def task_wait_random(max_delay: int) -> asyncio.Task[float]:
     """
     task = create_task(wait_random(max_delay))
     return task
+
 
 
 if __name__ == '__main__':
