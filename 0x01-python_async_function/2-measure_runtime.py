@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 """  Module for measuring the runtime of wait_n function."""
 import asyncio
 from typing import Optional
