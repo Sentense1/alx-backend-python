@@ -13,7 +13,7 @@ async def async_generator() -> int:
     Yields:
         int: Random integers generated between 1 and 100.
     """
-    for i in range(11):
+    for i in range(10):
         await asyncio.sleep(1)
         yield random.uniform(0, 10)
 
