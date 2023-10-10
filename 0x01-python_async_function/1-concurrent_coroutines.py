@@ -18,8 +18,6 @@ async def wait_n(n: int, max_delay: int) -> List[float]:
         List[float]: A list of random delays sorted in ascending order.
     """
     # Create a list of tasks to execute concurrently.
-    # Using list comprehension, create tasks that call the 'wait_random' coroutine
-    # Each task represents an asynchronous delay operation.
     tasks = [asyncio.create_task(wait_random(max_delay)) for _ in range(n)]
 
     # Wait for tasks to complete using asyncio.as_completed(),

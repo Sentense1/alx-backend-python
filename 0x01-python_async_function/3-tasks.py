@@ -16,7 +16,7 @@ def task_wait_random(max_delay: int) -> asyncio.Task:
         max_delay (int): The maximum delay in seconds.
 
     Returns:
-        asyncio.Task[float]: An asyncio.Task representing the asynchronous operation.
+        asyncio.Task[float]: An asyncio.Task.
     """
     task = asyncio.create_task(wait_random(max_delay))
     return task
