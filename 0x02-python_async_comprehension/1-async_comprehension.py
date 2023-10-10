@@ -13,7 +13,7 @@ async def async_comprehension() -> float:
     Returns:
         list: List of values collected asynchronously.
     """
-    result = [ i async for i in async_generator() ]
+    result = [i async for i in async_generator()]
     return result
 
 
