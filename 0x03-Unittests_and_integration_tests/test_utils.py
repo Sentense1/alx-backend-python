@@ -5,7 +5,7 @@ Module for unittest using parameterized
 import unittest
 from unittest.mock import Mock, patch
 from parameterized import parameterized
-from utils import access_nested_map, get_json
+from utils import access_nested_map, get_json, memoize
 
 
 class TestAccessNestedMap(unittest.TestCase):
@@ -52,6 +52,39 @@ class TestGetJson(unittest.TestCase):
         mock.assert_called_once()
 
         patcher.stop()
+
+
+class TestMemoize(unittest.TestCase):
+    """
+    Test class for memoise function
+    """
+    def test_memoize(self):
+        """
+        method for testing memoize function
+        """
+        class TestClass:
+            """
+            A test class for wrapping
+            """
+
+            def a_method(self):
+                """
+                Method of test class
+                """
+                return 42
+
+            @memoize
+            def a_property(self):
+                """
+                A decorator method
+                """
+                return self.a_method()
+            
+         with patch.object(TestClass, 'a_method') as mock:
+            test_class = TestClass()
+            test_class.a_property()
+            test_class.a_property()
+            mock.assert_called_once()
 
 
 if __name__ == "__main__":
