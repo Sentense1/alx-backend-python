@@ -79,7 +79,7 @@ class TestMemoize(unittest.TestCase):
                 A decorator method
                 """
                 return self.a_method()
-            
+
         with patch.object(TestClass, 'a_method') as mock:
             test_class = TestClass()
             test_class.a_property()
