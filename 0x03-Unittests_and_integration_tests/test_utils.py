@@ -20,8 +20,7 @@ class TestAccessNestedMap(unittest.TestCase):
         """
         Method to test nexted map function
         """
-        result = access_nexted_map(nested_map, path)
-        self.assertEqual(result, expected)
+        self.assertEqual(access_nested_map(nested_map, path), expected)
 
 
 if __name__ =="__main__":
