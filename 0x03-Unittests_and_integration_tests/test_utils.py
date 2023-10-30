@@ -3,6 +3,7 @@
 Module for unittest using parameterized
 """
 import unittest
+from unittest.mock import Mock, patch
 from parameterized import parameterized
 from utils import access_nested_map, get_json
 
@@ -38,7 +39,7 @@ class TestGetJson(unittest.TestCase):
         ("http://example.com", {"payload": True}),
         ("http://holberton.io", {"payload": False})
     ])
-    def test_get_json(self, test_url, test_payload, mock_get):
+    def test_get_json(self, test_url, test_payload):
         """ Method to test get_json function"""
         config = {'return_value.json.return_value': test_payload}
 
