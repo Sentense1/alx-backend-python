@@ -4,16 +4,17 @@
 
 import asyncio
 import random
+from typing import Generator
 
 
-async def async_generator() -> int:
+async def async_generator() -> Generator[float, None, None]:
     """
     Asynchronous generator that yields random integers with a 1-second delay.
 
     Yields:
         int: Random integers generated between 1 and 100.
     """
-    for i in range(11):
+    for i in range(10):
         await asyncio.sleep(1)
         yield random.uniform(0, 10)
 
