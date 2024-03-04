@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 """ Module for type hint """
-
 from typing import Tuple, List
 
 
@@ -11,6 +10,7 @@ def zoom_array(lst: Tuple, factor: int = 2) -> List:
         for _ in range(factor)
     ]
     return zoomed_in
+
 
 # Use a tuple instead of a list
 array = (12, 72, 91)
